@@ -1,0 +1,202 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+body, header {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  /* padding: 10px 20px; */
+  margin: 0 auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.icon-container {
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.icon-container img {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#spin-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@keyframes buttonClickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button-click-animation {
+  animation: buttonClickAnimation 0.3s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-animation {
+  animation: spin 1s linear infinite;
+}
+
+#result-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#result {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 2px solid #a0a0a0;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  bottom: auto;
+}
+
+#result img {
+  max-width: 70%; /* 画像の幅がコンテナに収まるように最大幅を指定 */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.result-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.result-container img {
+  border: 4px solid transparent;
+}
+
+.sr-result {
+  color: blue; /* 青色の文字色 */
+}
+
+.sr-result h3 {
+  font-size: 24px; /* SRの場合のフォントサイズ */
+}
+
+.sr-result img {
+  border-color: blue; /* オレンジ色の枠線 */
+}
+
+.ssr-result {
+  color: #FFD700; /* 金色の文字色 */
+}
+
+.ssr-result h3 {
+  font-size: 24px; /* SSRの場合のフォントサイズ */
+}
+
+.ssr-result img {
+  border-color: #FFD700; /* 金色の枠線 */
+}
+
+#probability{
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #a0a0a0;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#probability2{
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #a0a0a0;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+  padding: 10px;
+  bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.character-item {
+  width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+.character-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.character-item p {
+  margin-top: 10px;
+}
+
+.center {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
